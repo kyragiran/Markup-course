@@ -1,0 +1,13 @@
+Week 3: Monte Carlo Simulation of Confidence Intervals
+
+Purpose
+This repository contains an R script for a Monte Carlo simulation to assess the validity of confidence intervals for the mean.
+
+Steps Taken
+1. Generated random samples from a normal distribution.
+2. Calculated 95% confidence intervals for the sample mean.
+3. Repeated the process 1000 times to estimate the proportion of intervals containing the true mean.
+
+Results
+The script reports the proportion of confidence intervals that include the true mean (coverage rate). The expected value for a 95% confidence level is approximately 0.95.
+
