@@ -1,0 +1,7 @@
+---
+title: "Test PDF Rendering"
+author: "Your Name"
+format: pdf
+---
+
+This is a test document for PDF rendering.
