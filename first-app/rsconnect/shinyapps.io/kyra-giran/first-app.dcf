@@ -1,0 +1,10 @@
+name: first-app
+title:
+username: kyra-giran
+account: kyra-giran
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 13752301
+bundleId: 9666127
+url: https://kyra-giran.shinyapps.io/first-app/
+version: 1

@@ -1,13 +1,17 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
-library(shinythemes)
-install.packages("rsconnect")  # For deployment
 library(rsconnect)
 
 
+setwd("C:/Users/giran/OneDrive/Dokumentumok/UU MSBBSS/Markup-course/first-app")
+options(repos = c(CRAN = "https://cloud.r-project.org/"))
+
+
+rsconnect::setAccountInfo(name='kyra-giran', token='41480065E1A519F413C3AA99A5EE0FFA', secret='998IDe4a8+HWvvrteTIRpcU3iKtWfSXKU83UNw24')
+
 # Load the dataset 
-imdb_data <- read.csv("C://Users//giran/OneDrive//Dokumentumok//UU MSBBSS//Markup-course//first-app//imdb_top_1000.csv")
+imdb_data <- read.csv("data//imdb_top_1000.csv")
 
 # Clean and prepare data
 imdb_data <- imdb_data %>%
@@ -125,4 +129,8 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
+
+library(rsconnect)
+deployApp()
+
 
